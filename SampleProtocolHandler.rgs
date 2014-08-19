@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'SampleProtocolHandler'
+		'SampleProtocolHandler.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

@@ -1,0 +1,19 @@
+// SampleProtocolHandler.idl : IDL-Quelle für SampleProtocolHandler
+//
+
+// Diese Datei wird mit dem MIDL-Tool bearbeitet,
+// um den Quellcode für die Typbibliothek (SampleProtocolHandler.tlb) und die Abruffunktionen zu erstellen.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(A06BA0F8-2DC4-4361-9C8A-719A3E1F3579),
+	version(1.0),
+	helpstring("SampleProtocolHandler 1.0-Typbibliothek")
+]
+library SampleProtocolHandlerLib
+{
+	importlib("stdole2.tlb");
+
+};

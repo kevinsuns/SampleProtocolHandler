@@ -1,0 +1,38 @@
+HKCR
+{
+	SampleProtocolHandler.ReproAPP.1 = s 'ReproAPP Class'
+	{
+		CLSID = s '{d334f580-7eba-4910-a856-b40933811d42}'
+	}
+	SampleProtocolHandler.ReproAPP = s 'ReproAPP Class'
+	{
+		CLSID = s '{d334f580-7eba-4910-a856-b40933811d42}'
+		CurVer = s 'SampleProtocolHandler.ReproAPP.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {d334f580-7eba-4910-a856-b40933811d42} = s 'ReproAPP Class'
+		{
+			ProgID = s 'SampleProtocolHandler.ReproAPP.1'
+			VersionIndependentProgID = s 'SampleProtocolHandler.ReproAPP'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			'TypeLib' = s '{A06BA0F8-2DC4-4361-9C8A-719A3E1F3579}'
+		}
+	}
+	
+	NoRemove PROTOCOLS
+	{
+	   NoRemove Handler
+	   {
+	      ForceRemove klrepro = s 'protocol handler (issue repro)'
+	      {
+           val CLSID = s '{d334f580-7eba-4910-a856-b40933811d42}'
+         }
+	   }
+	}
+	
+}

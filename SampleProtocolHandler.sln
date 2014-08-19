@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleProtocolHandler", "SampleProtocolHandler.vcproj", "{73F32CFE-B9B4-4ACD-9FBC-BF77B89F6660}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleProtocolHandlerPS", "SampleProtocolHandlerPS.vcproj", "{0A7824BB-1851-4299-9C84-DEA6D9E6DFF7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{73F32CFE-B9B4-4ACD-9FBC-BF77B89F6660} = {73F32CFE-B9B4-4ACD-9FBC-BF77B89F6660}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73F32CFE-B9B4-4ACD-9FBC-BF77B89F6660}.Debug|Win32.ActiveCfg = Debug|Win32
+		{73F32CFE-B9B4-4ACD-9FBC-BF77B89F6660}.Debug|Win32.Build.0 = Debug|Win32
+		{73F32CFE-B9B4-4ACD-9FBC-BF77B89F6660}.Release|Win32.ActiveCfg = Release|Win32
+		{73F32CFE-B9B4-4ACD-9FBC-BF77B89F6660}.Release|Win32.Build.0 = Release|Win32
+		{0A7824BB-1851-4299-9C84-DEA6D9E6DFF7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0A7824BB-1851-4299-9C84-DEA6D9E6DFF7}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
